@@ -5,11 +5,11 @@
   "desktopWidth": "1200",
   "backgroundColor": "white",
   "colors": {
-    "primary": "#0090FF",
-    "accent1": "#0E4465",
-    "accent2": "#1BBF6E",
-    "accent3": "#2DD0DB",
-    "accent4": "#00D0DB",
+    "primary": "#346DEE",
+    "accent1": "#092153",
+    "accent2": "#6DD6BE",
+    "accent3": "#54ACC8",
+    "accent4": "#FAC546",
     "white": "#FFFFFF",
     "grayLight": "#E8E8EF",
     "gray": "#B0B0BF",
@@ -17,10 +17,10 @@
     "black": "#000000"
   },
   "fonts": {
-    "font1": "Inter:wght@400;700",
-    "font2": "Archivo:wght@400;700",
-    "font3": "Rufina:wght@400;700",
-    "font4": "IBM Plex Mono:wght@400;700"
+    "font1": "Aileron",
+    "font2": "Source Code Pro:wght@400;700",
+    "font3": "Arial",
+    "font4": "Arial"
   },
   "sizeLeading": {
     "textXs": "12/20",
@@ -57,32 +57,22 @@
   "logo": {
     "logoType": "Microgen",
     "logoTypeStyle": "text-white undefined text-base undefined font-bold",
-    "image": "http://res.cloudinary.com/protocolai/image/upload/v1646088242/cryptonet/protocol-logo_ewn4sv.png",
+    "image": "https://res.cloudinary.com/protocolai/image/upload/v1665672995/pl-summit-22/protocol-pieces_azpkce.svg",
     "imageWidth": "48",
-    "imageHeight": "48",
+    "imageHeight": "37",
     "imageMargin": "24"
   },
   "nav": {
     "navItems": [
       {
-        "label": "Sub Nav",
-        "link": "",
-        "subNavItems": [
-          {
-            "label": "Option 1",
-            "link": "/"
-          },
-          {
-            "label": "Option 2",
-            "link": "/"
-          }
-        ]
+        "label": "Register",
+        "link": "#"
       }
     ],
     "navAlignment": "text-right",
     "navTypeStyle": "text-white font-1 text-base mb-0 ",
     "navBackgroundColor": "bg-primary opacity-100",
-    "padding": "pt-10 pb-10 pr-20 pl-20 sm:pt-5 sm:pb-5 sm:pr-5 sm:pl-5"
+    "padding": "pt-2.5 pb-2.5 pr-20 pl-20 sm:pt-5 sm:pb-5 sm:pr-5 sm:pl-5"
   },
   "blocks": [
     {
