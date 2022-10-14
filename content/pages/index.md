@@ -165,7 +165,7 @@ blocks:
       card: ''
       cardContentWrap: ''
       cardContent: ''
-      cardHeadline: text-sm font-2 font-bold mb-3
+      cardHeadline: text-xs font-2 font-bold mb-4
       cardText: text-xs font-1
     background:
       fillStyles: from-accent2 to-accent3 bg-gradient-to-tr opacity-100
