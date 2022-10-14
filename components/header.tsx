@@ -164,7 +164,7 @@ export const Header = ({
                   } else {
                     return (
                       <li className="inline-block ml-8" key={index}>
-                        <a style={linkStyles} className={"block no-underline"} href={item.link} target={linkTarget(item.link)}>{item.label}</a>
+                        <a className={"block no-underline px-10 py-1 rounded border-2 border-primary"} href={item.link} target={linkTarget(item.link)}>{item.label}</a>
                       </li>
                     )
                   }

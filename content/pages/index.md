@@ -197,10 +197,11 @@ blocks:
         subhead: ''
         text: |
           This is a rich text component you can add hyperlinks, etc.
+    navigationLabel: FAQs
     _template: accordian
   - tailwind:
       section: ''
-      wrap: max-w-site-full mx-auto px-20 py-10
+      wrap: 'max-w-site-full mx-auto px-20 py-10 sm:px-5'
       imageWrap: ''
       image: ''
       contentWrap: ''
