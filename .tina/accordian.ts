@@ -291,42 +291,22 @@ export const accordianBlockSchema: TinaTemplate = {
       },
       fields: [
         {
-          label: "Image",
-          name: "image",
-          type: "object",
-          fields: [
-            {
-              label: "Image Source",
-              name: "src",
-              type: "image",
-              ui: {
-                clearable: true,
-              }
-            },
-            {
-              name: "alt",
-              label: "Alt Text",
-              type: "string",
-            },
-          ],
-        },
-        {
           type: "string",
-          label: "Label",
+          label: "Question Headline",
           name: "label",
         },
         {
           type: "string",
-          label: "Title",
+          label: "Question",
           name: "headline",
         },
         {
-          label: "Subhead",
+          label: "Answer Headline",
           name: "subhead",
           type: "string",
         },
         {
-          label: "Text",
+          label: "Answer",
           name: "text",
           type: "rich-text",
         },

@@ -1107,13 +1107,7 @@ type PagesBlocksAccordianButtons {
   type: String
 }
 
-type PagesBlocksAccordianItemsImage {
-  src: String
-  alt: String
-}
-
 type PagesBlocksAccordianItems {
-  image: PagesBlocksAccordianItemsImage
   label: String
   headline: String
   subhead: String
@@ -2200,13 +2194,7 @@ input PagesBlocksAccordianButtonsMutation {
   type: String
 }
 
-input PagesBlocksAccordianItemsImageMutation {
-  src: String
-  alt: String
-}
-
 input PagesBlocksAccordianItemsMutation {
-  image: PagesBlocksAccordianItemsImageMutation
   label: String
   headline: String
   subhead: String

@@ -916,11 +916,6 @@ fragment PagesParts on Pages {
       }
       items {
         __typename
-        image {
-          __typename
-          src
-          alt
-        }
         label
         headline
         subhead

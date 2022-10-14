@@ -184,9 +184,9 @@ blocks:
     subhead: ''
     body: ''
     items:
-      - label: Label
+      - label: ''
         headline: Here's Another Card
-        subhead: Subhead
+        subhead: ''
         text: |
           This is a rich text component you can add hyperlinks, etc.
       - headline: Here's Another Card

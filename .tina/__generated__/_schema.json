@@ -19905,51 +19905,8 @@
                   },
                   "fields": [
                     {
-                      "label": "Image",
-                      "name": "image",
-                      "type": "object",
-                      "fields": [
-                        {
-                          "label": "Image Source",
-                          "name": "src",
-                          "type": "image",
-                          "ui": {
-                            "clearable": true
-                          },
-                          "namespace": [
-                            "pages",
-                            "blocks",
-                            "accordian",
-                            "items",
-                            "image",
-                            "src"
-                          ]
-                        },
-                        {
-                          "name": "alt",
-                          "label": "Alt Text",
-                          "type": "string",
-                          "namespace": [
-                            "pages",
-                            "blocks",
-                            "accordian",
-                            "items",
-                            "image",
-                            "alt"
-                          ]
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "accordian",
-                        "items",
-                        "image"
-                      ]
-                    },
-                    {
                       "type": "string",
-                      "label": "Label",
+                      "label": "Question Headline",
                       "name": "label",
                       "namespace": [
                         "pages",
@@ -19961,7 +19918,7 @@
                     },
                     {
                       "type": "string",
-                      "label": "Title",
+                      "label": "Question",
                       "name": "headline",
                       "namespace": [
                         "pages",
@@ -19972,7 +19929,7 @@
                       ]
                     },
                     {
-                      "label": "Subhead",
+                      "label": "Answer Headline",
                       "name": "subhead",
                       "type": "string",
                       "namespace": [
@@ -19984,7 +19941,7 @@
                       ]
                     },
                     {
-                      "label": "Text",
+                      "label": "Answer",
                       "name": "text",
                       "type": "rich-text",
                       "namespace": [
