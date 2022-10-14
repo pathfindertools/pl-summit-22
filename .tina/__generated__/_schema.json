@@ -19038,6 +19038,1014 @@
                 "blocks",
                 "tailwindCards"
               ]
+            },
+            {
+              "name": "accordian",
+              "label": "Accordian",
+              "ui": {
+                "defaultItem": {
+                  "label": "",
+                  "headline": "This is a headline",
+                  "subhead": "Here is a subhead",
+                  "body": {
+                    "children": [
+                      {
+                        "type": "p",
+                        "children": [
+                          {
+                            "text": "This is a rich text component you can add hyperlinks, etc."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "style": {
+                    "textAlignment": "text-left",
+                    "padding": "pt-20 pr-20 pb-20 pl-20",
+                    "contentWidth": "w-full",
+                    "labelStyles": "text-black font-1 text-sm mb-0",
+                    "headlineStyles": "text-black font-1 text-5xl mb-0",
+                    "subheadStyles": "text-black font-1 text-3xl mb-0",
+                    "textStyles": "text-black font-1 text-md mb-0",
+                    "contentOrder": "labelHeadingsContent"
+                  },
+                  "cardStyle": {
+                    "fillStyles": "bg-gray",
+                    "padding": "pt-4 pr-4 pb-4 pl-4",
+                    "labelStyles": "text-black text-sm mb-0",
+                    "headlineStyles": "text-black text-2xl mb-0",
+                    "subheadStyles": "text-black text-lg mb-0",
+                    "textStyles": "text-black text-sm mb-0",
+                    "buttonType": "solid"
+                  },
+                  "items": [
+                    {
+                      "headline": "Here's Another Card",
+                      "subhead": "",
+                      "text": {
+                        "children": [
+                          {
+                            "type": "p",
+                            "children": [
+                              {
+                                "text": "This is a rich text component you can add hyperlinks, etc."
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "headline": "Here's Another Card",
+                      "subhead": "",
+                      "text": {
+                        "children": [
+                          {
+                            "type": "p",
+                            "children": [
+                              {
+                                "text": "This is a rich text component you can add hyperlinks, etc."
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "headline": "Here's Another Card",
+                      "subhead": "",
+                      "text": {
+                        "children": [
+                          {
+                            "type": "p",
+                            "children": [
+                              {
+                                "text": "This is a rich text component you can add hyperlinks, etc."
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              "fields": [
+                {
+                  "type": "object",
+                  "label": "Section Styles",
+                  "name": "style",
+                  "ui": {
+                    "component": "group"
+                  },
+                  "fields": [
+                    {
+                      "label": "Text Alignment",
+                      "name": "textAlignment",
+                      "type": "string",
+                      "ui": {
+                        "component": "selectField"
+                      },
+                      "options": [
+                        {
+                          "label": "Left",
+                          "value": "text-left"
+                        },
+                        {
+                          "label": "Center",
+                          "value": "text-center"
+                        },
+                        {
+                          "label": "Right",
+                          "value": "text-right"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "accordian",
+                        "style",
+                        "textAlignment"
+                      ]
+                    },
+                    {
+                      "label": "Content Padding",
+                      "name": "padding",
+                      "type": "string",
+                      "ui": {
+                        "component": "paddingControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "accordian",
+                        "style",
+                        "padding"
+                      ]
+                    },
+                    {
+                      "label": "Content Width",
+                      "name": "contentWidth",
+                      "type": "string",
+                      "ui": {
+                        "component": "selectField"
+                      },
+                      "options": [
+                        {
+                          "label": "100%",
+                          "value": "w-full"
+                        },
+                        {
+                          "label": "75%",
+                          "value": "w-9/12"
+                        },
+                        {
+                          "label": "66%",
+                          "value": "w-8/12"
+                        },
+                        {
+                          "label": "50%",
+                          "value": "w-6/12"
+                        },
+                        {
+                          "label": "33%",
+                          "value": "w-4/12"
+                        },
+                        {
+                          "label": "25%",
+                          "value": "w-3/12"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "accordian",
+                        "style",
+                        "contentWidth"
+                      ]
+                    },
+                    {
+                      "label": "Typography",
+                      "name": "typographyTitle",
+                      "type": "string",
+                      "ui": {
+                        "component": "ruledTitle"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "accordian",
+                        "style",
+                        "typographyTitle"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Label Style",
+                      "name": "labelStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "accordian",
+                        "style",
+                        "labelStyles"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Headline Style",
+                      "name": "headlineStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "accordian",
+                        "style",
+                        "headlineStyles"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Subhead Style",
+                      "name": "subheadStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "accordian",
+                        "style",
+                        "subheadStyles"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Text Style",
+                      "name": "textStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "accordian",
+                        "style",
+                        "textStyles"
+                      ]
+                    },
+                    {
+                      "label": "Content Order",
+                      "name": "contentOrder",
+                      "type": "string",
+                      "ui": {
+                        "component": "selectField"
+                      },
+                      "options": [
+                        {
+                          "label": "Label Headline Text",
+                          "value": "labelHeadingsContent"
+                        },
+                        {
+                          "label": "Label Text Headline",
+                          "value": "labelContentHeadings"
+                        },
+                        {
+                          "label": "Headline Label Text",
+                          "value": "headingsLabelContent"
+                        },
+                        {
+                          "label": "Headline Text Label",
+                          "value": "headingsContentLabel"
+                        },
+                        {
+                          "label": "Text Label Headline",
+                          "value": "contentLabelHeadings"
+                        },
+                        {
+                          "label": "Text Headline Label",
+                          "value": "contentHeadingsLabel"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "accordian",
+                        "style",
+                        "contentOrder"
+                      ]
+                    }
+                  ],
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "accordian",
+                    "style"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "label": "Card Style",
+                  "name": "cardStyle",
+                  "ui": {
+                    "component": "group"
+                  },
+                  "fields": [
+                    {
+                      "type": "string",
+                      "label": "Background",
+                      "name": "fillStyles",
+                      "ui": {
+                        "component": "fillControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "accordian",
+                        "cardStyle",
+                        "fillStyles"
+                      ]
+                    },
+                    {
+                      "label": "Padding",
+                      "name": "padding",
+                      "type": "string",
+                      "ui": {
+                        "component": "paddingControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "accordian",
+                        "cardStyle",
+                        "padding"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Border",
+                      "name": "borderStyles",
+                      "ui": {
+                        "component": "borderControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "accordian",
+                        "cardStyle",
+                        "borderStyles"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Image",
+                      "name": "imageStyles",
+                      "ui": {
+                        "component": "imageControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "accordian",
+                        "cardStyle",
+                        "imageStyles"
+                      ]
+                    },
+                    {
+                      "label": "Typography",
+                      "name": "typographyTitle",
+                      "type": "string",
+                      "ui": {
+                        "component": "ruledTitle"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "accordian",
+                        "cardStyle",
+                        "typographyTitle"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Label",
+                      "name": "labelStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "accordian",
+                        "cardStyle",
+                        "labelStyles"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Headline",
+                      "name": "headlineStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "accordian",
+                        "cardStyle",
+                        "headlineStyles"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Subhead",
+                      "name": "subheadStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "accordian",
+                        "cardStyle",
+                        "subheadStyles"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Text",
+                      "name": "textStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "accordian",
+                        "cardStyle",
+                        "textStyles"
+                      ]
+                    },
+                    {
+                      "label": "Button",
+                      "name": "buttonTitle",
+                      "type": "string",
+                      "ui": {
+                        "component": "ruledTitle"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "accordian",
+                        "cardStyle",
+                        "buttonTitle"
+                      ]
+                    },
+                    {
+                      "label": "Type",
+                      "name": "buttonType",
+                      "type": "string",
+                      "ui": {
+                        "component": "selectField"
+                      },
+                      "options": [
+                        {
+                          "label": "Primary",
+                          "value": "primary"
+                        },
+                        {
+                          "label": "Secondary",
+                          "value": "secondary"
+                        },
+                        {
+                          "label": "Minor",
+                          "value": "minor"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "accordian",
+                        "cardStyle",
+                        "buttonType"
+                      ]
+                    }
+                  ],
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "accordian",
+                    "cardStyle"
+                  ]
+                },
+                {
+                  "label": "Background",
+                  "name": "background",
+                  "type": "object",
+                  "fields": [
+                    {
+                      "type": "string",
+                      "label": "Background",
+                      "name": "fillStyles",
+                      "ui": {
+                        "component": "fillControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "accordian",
+                        "background",
+                        "fillStyles"
+                      ]
+                    },
+                    {
+                      "label": "Image",
+                      "name": "src",
+                      "type": "image",
+                      "ui": {
+                        "clearable": true
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "accordian",
+                        "background",
+                        "src"
+                      ]
+                    },
+                    {
+                      "label": "Image Position",
+                      "name": "position",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "type": "string",
+                      "options": [
+                        {
+                          "label": "Center",
+                          "value": "object-center"
+                        },
+                        {
+                          "label": "Top",
+                          "value": "object-top"
+                        },
+                        {
+                          "label": "Right Top",
+                          "value": "object-right-top"
+                        },
+                        {
+                          "label": "Right",
+                          "value": "object-right"
+                        },
+                        {
+                          "label": "Right Bottom",
+                          "value": "object-right-bottom"
+                        },
+                        {
+                          "label": "Bottom",
+                          "value": "object-bottom"
+                        },
+                        {
+                          "label": "Left Bottom",
+                          "value": "object-left-bottom"
+                        },
+                        {
+                          "label": "Left",
+                          "value": "object-left"
+                        },
+                        {
+                          "label": "Left Top",
+                          "value": "object-left-top"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "accordian",
+                        "background",
+                        "position"
+                      ]
+                    },
+                    {
+                      "label": "Ornaments",
+                      "name": "ornaments",
+                      "type": "object",
+                      "list": true,
+                      "fields": [
+                        {
+                          "label": "Image",
+                          "name": "src",
+                          "type": "image",
+                          "ui": {
+                            "clearable": true
+                          },
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "accordian",
+                            "background",
+                            "ornaments",
+                            "src"
+                          ]
+                        },
+                        {
+                          "label": "Alignment",
+                          "name": "alignment",
+                          "ui": {
+                            "component": "select"
+                          },
+                          "type": "string",
+                          "options": [
+                            {
+                              "label": "Center",
+                              "value": "center"
+                            },
+                            {
+                              "label": "Top",
+                              "value": "top"
+                            },
+                            {
+                              "label": "Right Top",
+                              "value": "top-right"
+                            },
+                            {
+                              "label": "Right",
+                              "value": "right"
+                            },
+                            {
+                              "label": "Right Bottom",
+                              "value": "bottom-right"
+                            },
+                            {
+                              "label": "Bottom",
+                              "value": "bottom"
+                            },
+                            {
+                              "label": "Left Bottom",
+                              "value": "bottom-left"
+                            },
+                            {
+                              "label": "Left",
+                              "value": "left"
+                            },
+                            {
+                              "label": "Left Top",
+                              "value": "top-left"
+                            }
+                          ],
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "accordian",
+                            "background",
+                            "ornaments",
+                            "alignment"
+                          ]
+                        },
+                        {
+                          "label": "Width",
+                          "name": "width",
+                          "type": "string",
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "accordian",
+                            "background",
+                            "ornaments",
+                            "width"
+                          ]
+                        },
+                        {
+                          "label": "Height",
+                          "name": "height",
+                          "type": "string",
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "accordian",
+                            "background",
+                            "ornaments",
+                            "height"
+                          ]
+                        },
+                        {
+                          "label": "X Offset",
+                          "name": "xOffset",
+                          "type": "string",
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "accordian",
+                            "background",
+                            "ornaments",
+                            "xOffset"
+                          ]
+                        },
+                        {
+                          "label": "Y Offset",
+                          "name": "yOffset",
+                          "type": "string",
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "accordian",
+                            "background",
+                            "ornaments",
+                            "yOffset"
+                          ]
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "accordian",
+                        "background",
+                        "ornaments"
+                      ]
+                    }
+                  ],
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "accordian",
+                    "background"
+                  ]
+                },
+                {
+                  "label": "Label",
+                  "name": "label",
+                  "type": "string",
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "accordian",
+                    "label"
+                  ]
+                },
+                {
+                  "label": "Headline",
+                  "name": "headline",
+                  "type": "string",
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "accordian",
+                    "headline"
+                  ]
+                },
+                {
+                  "label": "Subhead",
+                  "name": "subhead",
+                  "type": "string",
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "accordian",
+                    "subhead"
+                  ]
+                },
+                {
+                  "label": "Body",
+                  "name": "body",
+                  "type": "rich-text",
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "accordian",
+                    "body"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "label": "Buttons",
+                  "name": "buttons",
+                  "list": true,
+                  "ui": {
+                    "component": "itemListField",
+                    "defaultItem": {
+                      "label": "Button Label",
+                      "link": "/",
+                      "type": "primary"
+                    }
+                  },
+                  "fields": [
+                    {
+                      "label": "Label",
+                      "name": "label",
+                      "type": "string",
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "accordian",
+                        "buttons",
+                        "label"
+                      ]
+                    },
+                    {
+                      "label": "Link",
+                      "name": "link",
+                      "type": "string",
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "accordian",
+                        "buttons",
+                        "link"
+                      ]
+                    },
+                    {
+                      "label": "Type",
+                      "name": "type",
+                      "type": "string",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "options": [
+                        {
+                          "label": "Primary",
+                          "value": "primary"
+                        },
+                        {
+                          "label": "Secondary",
+                          "value": "secondary"
+                        },
+                        {
+                          "label": "Minor",
+                          "value": "minor"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "accordian",
+                        "buttons",
+                        "type"
+                      ]
+                    }
+                  ],
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "accordian",
+                    "buttons"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "label": "Cards",
+                  "name": "items",
+                  "list": true,
+                  "ui": {
+                    "component": "itemListField"
+                  },
+                  "fields": [
+                    {
+                      "label": "Image",
+                      "name": "image",
+                      "type": "object",
+                      "fields": [
+                        {
+                          "label": "Image Source",
+                          "name": "src",
+                          "type": "image",
+                          "ui": {
+                            "clearable": true
+                          },
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "accordian",
+                            "items",
+                            "image",
+                            "src"
+                          ]
+                        },
+                        {
+                          "name": "alt",
+                          "label": "Alt Text",
+                          "type": "string",
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "accordian",
+                            "items",
+                            "image",
+                            "alt"
+                          ]
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "accordian",
+                        "items",
+                        "image"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Label",
+                      "name": "label",
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "accordian",
+                        "items",
+                        "label"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Title",
+                      "name": "headline",
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "accordian",
+                        "items",
+                        "headline"
+                      ]
+                    },
+                    {
+                      "label": "Subhead",
+                      "name": "subhead",
+                      "type": "string",
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "accordian",
+                        "items",
+                        "subhead"
+                      ]
+                    },
+                    {
+                      "label": "Text",
+                      "name": "text",
+                      "type": "rich-text",
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "accordian",
+                        "items",
+                        "text"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Link",
+                      "name": "link",
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "accordian",
+                        "items",
+                        "link"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Button Label",
+                      "name": "buttonLabel",
+                      "description": "A button will be included if you have a link and button label, with only a link the entire card is linked",
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "accordian",
+                        "items",
+                        "buttonLabel"
+                      ]
+                    }
+                  ],
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "accordian",
+                    "items"
+                  ]
+                },
+                {
+                  "label": "Navigation Label",
+                  "name": "navigationLabel",
+                  "description": "Add a jump to this section to the navigation.",
+                  "type": "string",
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "accordian",
+                    "navigationLabel"
+                  ]
+                }
+              ],
+              "namespace": [
+                "pages",
+                "blocks",
+                "accordian"
+              ]
             }
           ],
           "namespace": [

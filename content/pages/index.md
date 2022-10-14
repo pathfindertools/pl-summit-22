@@ -3,8 +3,8 @@ draft: true
 blocks:
   - style:
       alignment: flex-col items-center items-start-vertical gap-8
-      padding: pt-32 pb-20 pr-20 pl-20
-      featureImage: wpx-499 hpx- mr-auto
+      padding: 'pt-32 pb-20 pr-20 pl-20 sm:pt-0 sm:pb-5 sm:pr-5 sm:pl-5'
+      featureImage: wpx-350 hpx- mr-auto
       featureContent: w-2/3 min-h-0 text-left
       labelStyles: text-accent2 font-2 text-lg mb-0 font-bold
       headlineStyles: 'text-white font-1 text-3xl mb-7 '
@@ -38,7 +38,7 @@ blocks:
     _template: feature
   - tailwind:
       section: ''
-      wrap: max-w-site-full mx-auto p-20
+      wrap: 'max-w-site-full mx-auto p-20 sm:p-5'
       imageWrap: ''
       image: ''
       contentWrap: ''
@@ -49,14 +49,14 @@ blocks:
       text: ''
       buttons: ''
       button: ''
-      card: relative flex gap-8 items-center mb-8
-      cardImageWrap: w-5/12
+      card: 'relative flex gap-8 items-center mb-8 sm:flex-col sm:mt-12'
+      cardImageWrap: 'w-5/12 sm:w-full'
       cardImage: rounded-lg h-full
-      cardContentWrap: w-7/12
+      cardContentWrap: 'w-7/12 sm:w-full'
       cardContent: text-white
       cardLabel: >-
         absolute z-20 px-8 left-0 top-1/2 transform -translate-y-1/2 w-5/12
-        text-center font-1 font-bold text-xl text-accent1 
+        text-center font-1 font-bold text-xl text-accent1 sm:hidden
       cardHeadline: text-white text-4xl font-1 font-bold
       cardSubhead: text-accent2 text-lg font-2 mb-6
       cardText: text-white text-lg
@@ -92,13 +92,13 @@ blocks:
     _template: tailwindCards
   - tailwind:
       section: ''
-      wrap: max-w-site-full mx-auto px-20
+      wrap: 'max-w-site-full mx-auto px-20 sm:px-5'
       imageWrap: ''
       image: ''
       contentWrap: max-w-site-1/2 mx-auto
       content: ''
       label: ''
-      headline: text-white text-6xl font-1 font-bold text-center mb-10
+      headline: 'text-white text-6xl font-1 font-bold text-center mb-10 sm:text-4xl'
       subhead: ''
       text: ''
       buttons: ''
@@ -127,7 +127,7 @@ blocks:
     _template: tailwindCards
   - tailwind:
       section: ''
-      wrap: max-w-site-full px-20 mx-auto pb-28
+      wrap: 'max-w-site-full px-20 mx-auto pb-28 sm:px-5 sm:pb-10'
       imageWrap: ''
       image: ''
       contentWrap: ''
@@ -148,6 +148,56 @@ blocks:
     subhead: ''
     body: ''
     _template: tailwindFeature
+  - style:
+      textAlignment: text-center
+      padding: 'pt-0 pb-20 pr-20 pl-20 sm:pt-0 sm:pb-10 sm:pr-5 sm:pl-5'
+      contentWidth: w-full
+      labelStyles: 'text-white font-1 text-sm mb-0 '
+      headlineStyles: >-
+        text-white font-1 text-6xl mb-10 font-bold sm:text-white sm:font-1
+        sm:text-4xl sm:mb-5 sm:font-bold
+      subheadStyles: 'text-white font-1 text-3xl mb-0 '
+      textStyles: 'text-white font-1 undefined mb-0 '
+      contentOrder: labelHeadingsContent
+    cardStyle:
+      fillStyles: ' opacity-100'
+      padding: pt-2.5 pb-2.5 pr-2.5 pl-2.5
+      borderStyles: border-primary border-1
+      imageStyles: ' undefined undefined undefined'
+      labelStyles: >-
+        text-white undefined text-lg mb-0  sm:text-white sm:font-1 sm:text-base
+        sm:mb-0 
+      headlineStyles: >-
+        text-white undefined text-lg mb-0  sm:text-white sm:font-1 sm:text-base
+        sm:mb-0 
+      subheadStyles: >-
+        text-white undefined text-lg mb-0  sm:text-white sm:font-1 sm:text-base
+        sm:mb-0 
+      textStyles: >-
+        text-white undefined text-lg mb-0  sm:text-white sm:font-1 sm:text-base
+        sm:mb-0 
+      buttonType: primary
+    background:
+      fillStyles: bg-accent1 opacity-100
+    label: ''
+    headline: FAQs
+    subhead: ''
+    body: ''
+    items:
+      - label: Label
+        headline: Here's Another Card
+        subhead: Subhead
+        text: |
+          This is a rich text component you can add hyperlinks, etc.
+      - headline: Here's Another Card
+        subhead: ''
+        text: |
+          This is a rich text component you can add hyperlinks, etc.
+      - headline: Here's Another Card
+        subhead: ''
+        text: |
+          This is a rich text component you can add hyperlinks, etc.
+    _template: accordian
   - tailwind:
       section: ''
       wrap: max-w-site-full mx-auto px-20 py-10

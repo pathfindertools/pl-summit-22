@@ -1059,7 +1059,83 @@ type PagesBlocksTailwindCards {
   navigationLabel: String
 }
 
-union PagesBlocks = PagesBlocksFeature | PagesBlocksPhotoCards | PagesBlocksTextCards | PagesBlocksBanner | PagesBlocksEmbed | PagesBlocksTailwindFeature | PagesBlocksTailwindCards
+type PagesBlocksAccordianStyle {
+  textAlignment: String
+  padding: String
+  contentWidth: String
+  typographyTitle: String
+  labelStyles: String
+  headlineStyles: String
+  subheadStyles: String
+  textStyles: String
+  contentOrder: String
+}
+
+type PagesBlocksAccordianCardStyle {
+  fillStyles: String
+  padding: String
+  borderStyles: String
+  imageStyles: String
+  typographyTitle: String
+  labelStyles: String
+  headlineStyles: String
+  subheadStyles: String
+  textStyles: String
+  buttonTitle: String
+  buttonType: String
+}
+
+type PagesBlocksAccordianBackgroundOrnaments {
+  src: String
+  alignment: String
+  width: String
+  height: String
+  xOffset: String
+  yOffset: String
+}
+
+type PagesBlocksAccordianBackground {
+  fillStyles: String
+  src: String
+  position: String
+  ornaments: [PagesBlocksAccordianBackgroundOrnaments]
+}
+
+type PagesBlocksAccordianButtons {
+  label: String
+  link: String
+  type: String
+}
+
+type PagesBlocksAccordianItemsImage {
+  src: String
+  alt: String
+}
+
+type PagesBlocksAccordianItems {
+  image: PagesBlocksAccordianItemsImage
+  label: String
+  headline: String
+  subhead: String
+  text: JSON
+  link: String
+  buttonLabel: String
+}
+
+type PagesBlocksAccordian {
+  style: PagesBlocksAccordianStyle
+  cardStyle: PagesBlocksAccordianCardStyle
+  background: PagesBlocksAccordianBackground
+  label: String
+  headline: String
+  subhead: String
+  body: JSON
+  buttons: [PagesBlocksAccordianButtons]
+  items: [PagesBlocksAccordianItems]
+  navigationLabel: String
+}
+
+union PagesBlocks = PagesBlocksFeature | PagesBlocksPhotoCards | PagesBlocksTextCards | PagesBlocksBanner | PagesBlocksEmbed | PagesBlocksTailwindFeature | PagesBlocksTailwindCards | PagesBlocksAccordian
 
 type PagesMeta {
   pageTitle: String
@@ -2076,6 +2152,82 @@ input PagesBlocksTailwindCardsMutation {
   navigationLabel: String
 }
 
+input PagesBlocksAccordianStyleMutation {
+  textAlignment: String
+  padding: String
+  contentWidth: String
+  typographyTitle: String
+  labelStyles: String
+  headlineStyles: String
+  subheadStyles: String
+  textStyles: String
+  contentOrder: String
+}
+
+input PagesBlocksAccordianCardStyleMutation {
+  fillStyles: String
+  padding: String
+  borderStyles: String
+  imageStyles: String
+  typographyTitle: String
+  labelStyles: String
+  headlineStyles: String
+  subheadStyles: String
+  textStyles: String
+  buttonTitle: String
+  buttonType: String
+}
+
+input PagesBlocksAccordianBackgroundOrnamentsMutation {
+  src: String
+  alignment: String
+  width: String
+  height: String
+  xOffset: String
+  yOffset: String
+}
+
+input PagesBlocksAccordianBackgroundMutation {
+  fillStyles: String
+  src: String
+  position: String
+  ornaments: [PagesBlocksAccordianBackgroundOrnamentsMutation]
+}
+
+input PagesBlocksAccordianButtonsMutation {
+  label: String
+  link: String
+  type: String
+}
+
+input PagesBlocksAccordianItemsImageMutation {
+  src: String
+  alt: String
+}
+
+input PagesBlocksAccordianItemsMutation {
+  image: PagesBlocksAccordianItemsImageMutation
+  label: String
+  headline: String
+  subhead: String
+  text: JSON
+  link: String
+  buttonLabel: String
+}
+
+input PagesBlocksAccordianMutation {
+  style: PagesBlocksAccordianStyleMutation
+  cardStyle: PagesBlocksAccordianCardStyleMutation
+  background: PagesBlocksAccordianBackgroundMutation
+  label: String
+  headline: String
+  subhead: String
+  body: JSON
+  buttons: [PagesBlocksAccordianButtonsMutation]
+  items: [PagesBlocksAccordianItemsMutation]
+  navigationLabel: String
+}
+
 input PagesBlocksMutation {
   feature: PagesBlocksFeatureMutation
   photoCards: PagesBlocksPhotoCardsMutation
@@ -2084,6 +2236,7 @@ input PagesBlocksMutation {
   embed: PagesBlocksEmbedMutation
   tailwindFeature: PagesBlocksTailwindFeatureMutation
   tailwindCards: PagesBlocksTailwindCardsMutation
+  accordian: PagesBlocksAccordianMutation
 }
 
 input PagesMetaMutation {
