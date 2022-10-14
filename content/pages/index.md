@@ -239,7 +239,10 @@ blocks:
           [Terms & Conditions](#)
     _template: tailwindCards
 meta:
-  pageTitle: Microgen
-  pageDescription: Make modern web 3.0 ready websites with a real-time visual editor.
+  pageTitle: PL Summit
+  pageDescription: >-
+    The Protocol Labs Network is getting together for our first ever
+    decentralized conference! Join us as we drive breakthroughs in computing to
+    push humanity forward.
 ---
 
