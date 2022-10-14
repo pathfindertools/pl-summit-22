@@ -88,6 +88,7 @@ blocks:
           In the evening, join the Protocol Labs Network at the beautiful Estufa
           Fria for the Lab Week opening party. We'll have cocktails, light
           bites, and music to kick the week off in style.
+    navigationLabel: Agenda
     _template: tailwindCards
   - tailwind:
       section: ''
@@ -122,6 +123,7 @@ blocks:
         subhead: ''
         text: |
           Parque Eduardo VII, 1070-051 Lisboa, Portugal
+    navigationLabel: Location
     _template: tailwindCards
   - tailwind:
       section: ''
@@ -146,6 +148,45 @@ blocks:
     subhead: ''
     body: ''
     _template: tailwindFeature
+  - tailwind:
+      section: ''
+      wrap: max-w-site-full mx-auto px-20 py-10
+      imageWrap: ''
+      image: ''
+      contentWrap: ''
+      content: ''
+      label: ''
+      headline: ''
+      subhead: ''
+      text: ''
+      buttons: ''
+      button: ''
+      cardWrap: flex justify-end gap-16
+      card: ''
+      cardContentWrap: ''
+      cardContent: ''
+      cardHeadline: text-sm font-2 font-bold mb-3
+      cardText: text-xs font-1
+    background:
+      fillStyles: from-accent2 to-accent3 bg-gradient-to-tr opacity-100
+    label: ''
+    headline: ''
+    subhead: ''
+    body: ''
+    items:
+      - headline: Links
+        subhead: ''
+        text: |
+          [Protocol Labs](https://protocol.ai)
+
+          [Event Github](#)
+      - headline: Legal
+        subhead: ''
+        text: |
+          [Privacy Policy](#)
+
+          [Terms & Conditions](#)
+    _template: tailwindCards
 meta:
   pageTitle: Microgen
   pageDescription: Make modern web 3.0 ready websites with a real-time visual editor.
