@@ -3,7 +3,7 @@ draft: true
 blocks:
   - style:
       alignment: flex-col items-center items-start-vertical gap-8
-      padding: 'pt-32 pb-20 pr-20 pl-20 sm:pt-0 sm:pb-5 sm:pr-5 sm:pl-5'
+      padding: 'pt-32 pb-20 pr-20 pl-20 sm:pt-20 sm:pb-5 sm:pr-5 sm:pl-5'
       featureImage: wpx-350 hpx- mr-auto
       featureContent: w-2/3 min-h-0 text-left
       labelStyles: text-accent2 font-2 text-lg mb-0 font-bold
@@ -50,13 +50,13 @@ blocks:
       buttons: ''
       button: ''
       card: 'relative flex gap-8 items-center mb-8 sm:flex-col sm:mt-12'
-      cardImageWrap: 'w-5/12 sm:w-full'
-      cardImage: rounded-lg h-full
+      cardImageWrap: 'w-5/12 sm:w-full sm:h-60'
+      cardImage: 'rounded-lg h-full w-full sm:object-cover'
       cardContentWrap: 'w-7/12 sm:w-full'
       cardContent: text-white
       cardLabel: >-
         absolute z-20 px-8 left-0 top-1/2 transform -translate-y-1/2 w-5/12
-        text-center font-1 font-bold text-xl text-accent1 sm:hidden
+        text-center font-1 font-bold text-xl text-accent1 sm:w-full sm:top-28
       cardHeadline: text-white text-4xl font-1 font-bold
       cardSubhead: text-accent2 text-lg font-2 mb-6
       cardText: text-white text-lg

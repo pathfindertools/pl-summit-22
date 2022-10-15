@@ -3,7 +3,7 @@
   "gtmId": "",
   "favicon": "https://res.cloudinary.com/protocolai/image/upload/v1649882296/filecoin-favicon_rn3bfm.png",
   "desktopWidth": "1440",
-  "backgroundColor": "accent1",
+  "backgroundColor": "white",
   "colors": {
     "primary": "#346DEE",
     "accent1": "#092153",
@@ -81,7 +81,7 @@
       "style": {
         "textAlignment": "text-left",
         "minHeight": "min-h-0",
-        "padding": "pt-5 pb-5 pr-20 pl-20",
+        "padding": "pt-5 pb-5 pr-20 pl-20 sm:pt-5 sm:pb-5 sm:pr-5 sm:pl-5",
         "width": "normal",
         "labelStyles": "text-black undefined text-sm mb-0 ",
         "headlineStyles": "text-black undefined text-5xl mb-0 ",
