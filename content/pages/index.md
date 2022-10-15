@@ -33,7 +33,7 @@ blocks:
       to push humanity forward.
     buttons:
       - label: Register
-        link: 'https://github.com/pathfindertools/microgen'
+        link: 'https://lu.ma/plsummit22'
         type: secondary
     _template: feature
   - tailwind:

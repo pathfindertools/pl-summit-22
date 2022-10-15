@@ -1,7 +1,7 @@
 {
   "siteUrl": "pl-summit-22.vercel.app/",
   "gtmId": "",
-  "favicon": "https://res.cloudinary.com/protocolai/image/upload/v1649882296/filecoin-favicon_rn3bfm.png",
+  "favicon": "https://res.cloudinary.com/protocolai/image/upload/v1665806845/pl-summit-22/pl-summit-favicon_k9dmro.png",
   "desktopWidth": "1440",
   "backgroundColor": "white",
   "colors": {
@@ -68,7 +68,7 @@
     "navItems": [
       {
         "label": "Register",
-        "link": "#"
+        "link": "https://lu.ma/plsummit22"
       }
     ],
     "navAlignment": "text-right",
