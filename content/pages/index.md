@@ -6,10 +6,10 @@ blocks:
       padding: 'pt-32 pb-20 pr-20 pl-20 sm:pt-20 sm:pb-5 sm:pr-5 sm:pl-5'
       featureImage: wpx-350 hpx- mr-auto
       featureContent: w-2/3 min-h-0 text-left
-      labelStyles: text-accent2 font-2 text-lg mb-0 font-bold
-      headlineStyles: 'text-white font-1 text-3xl mb-7 '
+      labelStyles: text-accent2 font-2 text-lg mb-1.5 font-bold
+      headlineStyles: 'text-white font-1 text-5xl mb-7 '
       subheadStyles: text-gray font-1 text-xl mb-7 font-bold
-      textStyles: 'text-white font-1 text-lg mb-11 '
+      textStyles: 'text-white font-1 text-xl mb-11 '
       contentOrder: labelHeadingsContent
     background:
       fillStyles: bg-accent1 opacity-100
@@ -57,9 +57,9 @@ blocks:
       cardLabel: >-
         absolute z-20 px-8 left-0 top-1/2 transform -translate-y-1/2 w-5/12
         text-center font-1 font-bold text-xl text-accent1 sm:w-full sm:top-28
-      cardHeadline: text-white text-4xl font-1 font-bold
-      cardSubhead: text-accent2 text-lg font-2 mb-6
-      cardText: text-white text-lg
+      cardHeadline: text-white text-4xl font-1 font-bold mb-3
+      cardSubhead: text-accent2 text-base font-bold font-2 mb-6
+      cardText: text-white text-base
     background:
       fillStyles: bg-accent1 opacity-100
     label: ''
