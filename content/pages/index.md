@@ -4,7 +4,7 @@ blocks:
   - style:
       alignment: flex-col items-center items-start-vertical gap-8
       padding: 'pt-32 pb-20 pr-20 pl-20 sm:pt-20 sm:pb-5 sm:pr-5 sm:pl-5'
-      featureImage: wpx-350 hpx- mr-auto
+      featureImage: wpx-500 hpx- mr-auto
       featureContent: w-2/3 min-h-0 text-left
       labelStyles: text-accent2 font-2 text-lg mb-1.5 font-bold
       headlineStyles: 'text-white font-1 text-5xl mb-7 '
