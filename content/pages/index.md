@@ -185,18 +185,31 @@ blocks:
     body: ''
     items:
       - label: ''
-        headline: Here's Another Card
+        headline: What is PL Summit? Who is it for?
         subhead: ''
-        text: |
-          This is a rich text component you can add hyperlinks, etc.
-      - headline: Here's Another Card
+        text: >
+          PL Summit is open to anyone who wants to hear Juan Benet's vision for
+          the future of the network, learn more about the progress and impact
+          being made by network teams, and prepare for a fun-filled week of
+          learning, collaboration, and connection.&#x20;
+      - headline: How do I register? What does the ticket include?
         subhead: ''
-        text: |
-          This is a rich text component you can add hyperlinks, etc.
-      - headline: Here's Another Card
+        text: >
+          Please register using the following link. The ticket includes entry to
+          PL Summit at Convento do Beato and the Opening Party at Estufa Fria.
+      - headline: Will there be transportation from the PL Summit to the Opening Party?
         subhead: ''
-        text: |
-          This is a rich text component you can add hyperlinks, etc.
+        text: >
+          Yes! We will have shuttles running from Convento do Beato to Estufa
+          Fria for all badge holders.
+      - headline: What's the COVID-19 policy?
+        text: >
+          PL Summit will follow COVID-19 protocols set for Lab Week. Please
+          review the policy here.
+      - headline: How do I reach the organizers?
+        text: >
+          Please reach out to labweek22@protocol.ai with any questions or
+          suggestions!
     navigationLabel: FAQs
     _template: accordian
   - tailwind:
