@@ -17,12 +17,12 @@ export default defineSchema({
       name: "pages",
       path: "content/pages",
       fields: [
-        {
-          type: "boolean",
-          label: "Draft",
-          description: "Draft posts are only visible on staging.",
-          name: "draft",
-        },
+        // {
+        //   type: "boolean",
+        //   label: "Draft",
+        //   description: "Draft posts are only visible on staging.",
+        //   name: "draft",
+        // },
         {
           type: "object",
           list: true,
