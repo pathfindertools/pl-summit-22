@@ -96,7 +96,7 @@ export const Accordian = ({ data, parentField = "" }) => {
           <Content
             data={data}
             styles={data.style}
-            alignment={data.textAlign}
+            alignment="text-center"
             width={contentWidth(data.style)}
             parentField={parentField}
             className="mx-auto"

@@ -148,7 +148,7 @@ blocks:
     body: ''
     _template: tailwindFeature
   - style:
-      textAlignment: text-center
+      textAlignment: text-left
       padding: 'pt-0 pb-20 pr-20 pl-20 sm:pt-0 sm:pb-10 sm:pr-5 sm:pl-5'
       contentWidth: w-full
       labelStyles: 'text-white font-1 text-sm mb-0 '
@@ -194,8 +194,9 @@ blocks:
       - headline: How do I register? What does the ticket include?
         subhead: ''
         text: >
-          Please register using the following link. The ticket includes entry to
-          PL Summit at Convento do Beato and the Opening Party at Estufa Fria.
+          Please register using the following [link](https://lu.ma/plsummit22).
+          The ticket includes entry to PL Summit at Convento do Beato and the
+          Opening Party at Estufa Fria.
       - headline: Will there be transportation from the PL Summit to the Opening Party?
         subhead: ''
         text: >
@@ -204,11 +205,13 @@ blocks:
       - headline: What's the COVID-19 policy?
         text: >
           PL Summit will follow COVID-19 protocols set for Lab Week. Please
-          review the policy here.
+          review the policy
+          [here](https://coda.io/@stellarevents/labweek22/covid-19-policy-21).
       - headline: How do I reach the organizers?
         text: >
-          Please reach out to labweek22@protocol.ai with any questions or
-          suggestions!
+          Please reach out to
+          [labweek22@protocol.ai](mailto:labweek22@protocol.ai) with any
+          questions or suggestions!
     navigationLabel: FAQs
     _template: accordian
   - tailwind:
