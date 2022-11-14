@@ -31,8 +31,9 @@ blocks:
       decentralized conference! Join us as we drive breakthroughs in computing
       to push humanity forward.
     buttons:
-      - label: Register
-        link: 'https://lu.ma/plsummit22'
+      - label: Watch the Recordings
+        link: >-
+          https://www.youtube.com/playlist?list=PLhuBigpl7lquMYyWetD-pjok5e-5Tv-MJ
         type: secondary
     _template: feature
   - tailwind:
