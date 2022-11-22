@@ -156,6 +156,16 @@ export const Layout = ({
           <div className="flex flex-col flex-1">{children}</div>
           {/* Footer Blocks */}
           <Blocks { ...globalData } />
+          <div className="bg-accent1 text-white py-6">
+            <div className="max-w-desktop-full mx-auto flex flex-row-reverse sm:flex-col justify-between px-20 sm:px-5">
+              <ul className="justify-start flex gap-6 text-sm">
+                <li><a className="underline" target="_blank" href="https://discuss.ipfs.tech/tos">Terms of Use</a></li>
+                <li><a className="underline" target="_blank" href="https://discuss.ipfs.tech/privacy">Privacy Policy</a></li>
+                <li><a className="underline" target="_blank" href="https://ipfs.tech/legal/">DMCA Policy</a></li>
+              </ul>
+              <p className="text-left text-sm sm:pt-6">Organized with love by <a className="underline" href="https://protocol.ai/" target="_blank">Protocol Labs</a></p>
+            </div>
+          </div>
         </div>
       </ThemeContext.Provider>
     </>

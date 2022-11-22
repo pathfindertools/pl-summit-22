@@ -247,12 +247,6 @@ blocks:
           [Protocol Labs](https://protocol.ai)
 
           [Event Github](#)
-      - headline: Legal
-        subhead: ''
-        text: |
-          [Privacy Policy](#)
-
-          [Terms & Conditions](#)
     _template: tailwindCards
 meta:
   pageTitle: PL Summit
