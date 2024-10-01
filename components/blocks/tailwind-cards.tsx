@@ -1,29 +1,27 @@
 import * as React from "react";
-import { TinaMarkdown } from "tinacms/dist/rich-text";
 import { linkTarget } from "../../helpers/utilities";
 import { Section } from "../section";
 
 const Card = ({ data, index, tw, parentField = ""  }) => {
   return (
-    <div className={tw.card} data-tinafield={`${parentField}.${index}`}>
+    <div className={tw.card} >
       <div className={tw.cardImageWrap}>
         {data.image && (
           <img
             alt={data.image.alt || data.headline}
             src={data.image.src}
             className={tw.cardImage}
-            data-tinafield={`${parentField}.${index}.image`}
           />
         )}
       </div>
       <div className={tw.cardContentWrap}>
         <div className={`markdown ${tw.content}`}>
-          {data.label &&<h4 className={tw.cardLabel} data-tinafield={`${parentField}.${index}.label`}>{data.label}</h4>}
-          {data.headline && <h2 className={tw.cardHeadline} data-tinafield={`${parentField}.${index}.headline`}>{data.headline}</h2>}
-          {data.subhead && <h3 className={tw.cardSubhead} data-tinafield={`${parentField}.${index}.subhead`}>{data.subhead}</h3>}
-          {data.text?.children && (
-            <div className={tw.cardText} data-tinafield={`${parentField}.${index}.text`}>
-              <TinaMarkdown content={data.text} />
+          {data.label &&<h4 className={tw.cardLabel} >{data.label}</h4>}
+          {data.headline && <h2 className={tw.cardHeadline}>{data.headline}</h2>}
+          {data.subhead && <h3 className={tw.cardSubhead}>{data.subhead}</h3>}
+          {data.text && (
+            <div className={tw.cardText}>
+              <div dangerouslySetInnerHTML={{ __html: data.text }} />
             </div>
           )}
         </div>
@@ -34,7 +32,6 @@ const Card = ({ data, index, tw, parentField = ""  }) => {
               href={data.link}
               target={linkTarget(data.link)}
               key={index}
-              data-tinafield={`${parentField}.${index}.buttonLabel`}
             >
               { data.buttonLabel }
             </a>
@@ -54,12 +51,12 @@ export const TailwindCards = ({ data, parentField = "" }) => {
       <div className={tw.wrap}>
         <div className={tw.contentWrap}>
           <div className={tw.content}>
-            {data.label &&<h4 className={tw.label} data-tinafield={`${parentField}.label`}>{data.label}</h4>}
-            {data.headline && <h2 className={tw.headline} data-tinafield={`${parentField}.headline`}>{data.headline}</h2>}
-            {data.subhead && <h3 className={tw.subhead} data-tinafield={`${parentField}.subhead`}>{data.subhead}</h3>}
-            {data.body?.children && (
-              <div className={tw.text} data-tinafield={`${parentField}.body`}>
-                <TinaMarkdown content={data.body} />
+            {data.label &&<h4 className={tw.label}>{data.label}</h4>}
+            {data.headline && <h2 className={tw.headline} >{data.headline}</h2>}
+            {data.subhead && <h3 className={tw.subhead} >{data.subhead}</h3>}
+            {data.body && (
+              <div className={tw.text} >
+                <div dangerouslySetInnerHTML={{ __html: data.body }} />
               </div>
             )}
             {data.buttons && (
@@ -72,7 +69,6 @@ export const TailwindCards = ({ data, parentField = "" }) => {
                           href={button.link}
                           target={linkTarget(button.link)}
                           key={index}
-                          data-tinafield={`${parentField}.buttons.${index}`}
                         >
                           { button.label }
                         </a>

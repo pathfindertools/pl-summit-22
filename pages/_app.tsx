@@ -1,11 +1,10 @@
 import "../styles.css";
-import TinaProvider from "../.tina/components/TinaDynamicProvider";
 
 const App = ({ Component, pageProps }) => {
   return (
-    <TinaProvider>
+    // <TinaProvider>
       <Component {...pageProps} />
-    </TinaProvider>
+    // </TinaProvider>
   );
 };
 

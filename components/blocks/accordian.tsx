@@ -4,7 +4,6 @@ import { Section } from "../section"
 import { Content } from "../content"
 import { hasWord, getWordWith } from "../../helpers/utilities";
 import { Buttons } from "../buttons";
-import { TinaMarkdown } from "tinacms/dist/rich-text"
 
 function slugify(s) {
   return s
@@ -42,10 +41,10 @@ const AccordianItem = ({ data, index, cardstyle, isLast, parentField = "" }) => 
       <div className={`relative cursor-pointer ${cardstyle?.padding}`} onClick={() => setActive(!active)}>
         <h4 className="text-body1 lg:text-body-lg">
           {data.label && (
-            <p className={cardstyle?.labelStyles} data-tinafield={`${parentField}.${index}.label`}>{data.label}</p>
+            <p className={cardstyle?.labelStyles}>{data.label}</p>
           )}
           {data.headline && (
-            <h3 className={cardstyle?.headlineStyles} data-tinafield={`${parentField}.${index}.headline`}>{data.headline}</h3>
+            <h3 className={cardstyle?.headlineStyles}>{data.headline}</h3>
           )}
         </h4>
         <div className={`absolute right-5 top-3.5 sm:top-4 ${active ? 'opacity-10 transform rotate-180' : ''}`}>
@@ -61,11 +60,11 @@ const AccordianItem = ({ data, index, cardstyle, isLast, parentField = "" }) => 
         >
           <div className={`absolute inset-0 -z-1`} />
           {data.subhead && (
-            <h4 className={cardstyle?.subheadStyles} data-tinafield={`${parentField}.${index}.subhead`}>{data.subhead}</h4>
+            <h4 className={cardstyle?.subheadStyles}>{data.subhead}</h4>
           )}
           {data.text && (
-            <div className={`markdown ${cardstyle?.textStyles}`} data-tinafield={`${parentField}.${index}.text`}>
-              <TinaMarkdown content={data.text} />
+            <div className={`markdown ${cardstyle?.textStyles}`}>
+              <div dangerouslySetInnerHTML={{ __html: data.text }} />
             </div>
           )}
           {data.link && data.buttonLabel && (
@@ -73,12 +72,12 @@ const AccordianItem = ({ data, index, cardstyle, isLast, parentField = "" }) => 
               link: data.link,
               label: data.buttonLabel,
               type: cardstyle?.buttonType
-            }]} className="absolute bottom-4" data-tinafield={`${parentField}.${index}.link`} />
+            }]} className="absolute bottom-4" />
           )}
 
         </div>
         {data.link && !data.buttonLabel && (
-          <a href={data.link} className="absolute inset-0 z-20" data-tinafield={`${parentField}.${index}.link.0`} />
+          <a href={data.link} className="absolute inset-0 z-20" />
         )}
       </div>
     </div>

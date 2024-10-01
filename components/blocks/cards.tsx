@@ -1,4 +1,3 @@
-import { TinaMarkdown } from "tinacms/dist/rich-text";
 import { Buttons } from "../buttons";
 import { CardGrid } from "../card-grid";
 
@@ -6,14 +5,13 @@ const Card = ({ data, index, cardstyle, parentField = ""  }) => {
   const wrapClasses =  data.link && data.buttonLabel ? 'pb-20' : '';
 
   return (
-    <div className={`flex flex-col relative sm:mb-6 ${cardstyle?.borderStyles}`} data-tinafield={`${parentField}.${index}`}>
+    <div className={`flex flex-col relative sm:mb-6 ${cardstyle?.borderStyles}`} >
       <div>
         {data.image && (
           <img
             alt={data.image.alt || data.headline}
             src={data.image.src}
             className={`w-full ${cardstyle?.imageStyles}`}
-            data-tinafield={`${parentField}.${index}.image`}
           />
         )}
       </div>
@@ -22,17 +20,17 @@ const Card = ({ data, index, cardstyle, parentField = ""  }) => {
       >
         <div className={`${cardstyle?.fillStyles} absolute inset-0 -z-1`} />
         {data.label && (
-          <p className={cardstyle?.labelStyles} data-tinafield={`${parentField}.${index}.label`}>{data.label}</p>
+          <p className={cardstyle?.labelStyles} >{data.label}</p>
         )}
         {data.headline && (
-          <h3 className={cardstyle?.headlineStyles} data-tinafield={`${parentField}.${index}.headline`}>{data.headline}</h3>
+          <h3 className={cardstyle?.headlineStyles}>{data.headline}</h3>
         )}
         {data.subhead && (
-          <h4 className={cardstyle?.subheadStyles} data-tinafield={`${parentField}.${index}.subhead`}>{data.subhead}</h4>
+          <h4 className={cardstyle?.subheadStyles}>{data.subhead}</h4>
         )}
         {data.text && (
-          <div className={`markdown ${cardstyle?.textStyles}`} data-tinafield={`${parentField}.${index}.text`}>
-            <TinaMarkdown content={data.text} />
+          <div className={`markdown ${cardstyle?.textStyles}`} >
+            <div dangerouslySetInnerHTML={{ __html: data.text }} />
           </div>
         )}
         {data.link && data.buttonLabel && (
@@ -40,12 +38,12 @@ const Card = ({ data, index, cardstyle, parentField = ""  }) => {
             link: data.link,
             label: data.buttonLabel,
             type: cardstyle?.buttonType
-          }]} className="absolute bottom-4"  data-tinafield={`${parentField}.${index}.link`} />
+          }]} className="absolute bottom-4"  />
         )}
 
       </div>
       {data.link && !data.buttonLabel && (
-        <a href={data.link} className="absolute inset-0 z-20" data-tinafield={`${parentField}.${index}.link.0`} />
+        <a href={data.link} className="absolute inset-0 z-20" />
       )}
     </div>
   );
