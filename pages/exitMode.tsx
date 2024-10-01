@@ -1,10 +1,11 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { Section } from "../components/section";
-import { useEditState } from "tinacms/dist/edit-state";
+// import { useEditState } from "tinacms/dist/edit-state";
 
 const GoToEditPage: React.FC = () => {
-  const { setEdit } = useEditState();
+  // const { setEdit } = useEditState();
+  const [,setEdit] = useState(false);
   const router = useRouter();
   useEffect(() => {
     setEdit(true);

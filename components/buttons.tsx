@@ -30,7 +30,6 @@ export const Buttons = ({
                 href={button.link}
                 target={linkTarget(button.link)}
                 key={index}
-                data-tinafield={`${parentField}.${index}`}
               >
                 { button.label }
               </a>

@@ -154,7 +154,6 @@ export const Feature = ({ data, parentField = "" }) => {
               style={imgStyles(style)}
               alt={data.image?.alt}
               src={data.image?.src}
-              data-tinafield={`${parentField}.image`}
             />
           )}
         </div>

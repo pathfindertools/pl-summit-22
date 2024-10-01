@@ -1,5 +1,4 @@
 import React from "react";
-import { TinaMarkdown } from "tinacms/dist/rich-text";
 import { Buttons } from "./buttons";
 
 const buttonAlignment = (alignment) => {
@@ -76,19 +75,19 @@ export const Content = ({
   // The first block gets an h1, others get an h2
   const headlineElement = () => {
     if (data?.headline && parentField === 'blocks.0') {
-      return <h1 className={`${headingOrder(order)} ${styles.headlineStyles}`} data-tinafield={`${parentField}.headline`}>{data.headline}</h1>
+      return <h1 className={`${headingOrder(order)} ${styles.headlineStyles}`} >{data.headline}</h1>
     } else if (data?.headline) {
-      return <h2 className={`${headingOrder(order)} ${styles.headlineStyles}`} data-tinafield={`${parentField}.headline`}>{data.headline}</h2>
+      return <h2 className={`${headingOrder(order)} ${styles.headlineStyles}`} >{data.headline}</h2>
     }
   }
   return (
     <div className={`flex flex-col ${width} ${alignment} ${className}`}>
-      {data?.label &&<h4 className={`${labelOrder(order)} ${styles.labelStyles}`} data-tinafield={`${parentField}.label`}>{data.label}</h4>}
+      {data?.label &&<h4 className={`${labelOrder(order)} ${styles.labelStyles}`} >{data.label}</h4>}
       {headlineElement()}
-      {data?.subhead && <h3 className={`${subheadOrder(order)} ${styles.subheadStyles}`} data-tinafield={`${parentField}.subhead`}>{data.subhead}</h3>}
-      {data?.body?.children && (
-        <div className={`${bodyOrder(order)} markdown items-center ${styles.textStyles}`} data-tinafield={`${parentField}.body`}>
-          <TinaMarkdown content={data.body} />
+      {data?.subhead && <h3 className={`${subheadOrder(order)} ${styles.subheadStyles}`} >{data.subhead}</h3>}
+      {data?.body && (
+        <div className={`${bodyOrder(order)} markdown items-center ${styles.textStyles}`} >
+          <div dangerouslySetInnerHTML={{ __html: data.body }} />
         </div>
       )}
       {data?.buttons && (
